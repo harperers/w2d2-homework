@@ -1,23 +1,23 @@
 /* Header */
 header {
     width: 100%;
-    min-height: 275px;
+    height: 40vh;
 }
-#home {
+#home header{
     background:  no-repeat white url(images/cliff_ocean.jpg);
-    background-size: 100% 400px;
+    background-size: 100% auto;
 }
-#activities {
+#activities header{
     background:  no-repeat white url(images/runfly.jpg);
-    background-size: 100% 400px;
+    background-size: 100% auto;
 }
-#contact {
+#contact header{
     background:  no-repeat white url(images/cliff_rock.jpg);
-    background-size: 100% 400px;
+    background-size: 100% auto;
 }
-#cliffs {
+#cliffs header{
     background:  no-repeat white url(images/forest_cliff.jpg);
-    background-size: 100% 400px;
+    background-size: 100% auto;
 }
 .main-header {
     background-color:rgba(38, 41, 61, 0.7) ;
@@ -200,13 +200,6 @@ th:first-child {
 td:first-child {
     font-weight:bold;
     background: #BDE1FF;
-}
-#activities main #displaySelected {
-    visibility: hidden;
-    margin: 0 auto;
-    width: 600px;
-    border: 2px solid #9ed034;
-    padding: 0.75em;
 }
 #activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
     display:inline-block;

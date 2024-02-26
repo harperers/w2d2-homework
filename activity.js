@@ -16,16 +16,11 @@ $(document).ready(function () {
             $(this).toggleClass("highlight");
 
             if ($(this).hasClass("highlight")) {
-                $('#displaySelected').css("visibility", "visible");
+                $('#displaySelected').trigger('focus')
                 $('#displaySelected').css("margin-top", "2em");
                 $('#result').append("<p>"+content+ ' at ' +cliffs[cliffNum-1]+"</p>");
             } else {
                 $('#result p:contains('+content+')').remove();
-
-                if($('#result').has('p').length == false) {
-                    $('#displaySelected').css("visibility", "hidden");
-                    $('#displaySelected').css("margin-top", "0");
-                }
             }
         }
     });
