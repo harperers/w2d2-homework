@@ -7,6 +7,18 @@ header {
     background:  no-repeat white url(images/cliff_ocean.jpg);
     background-size: 100% 400px;
 }
+#activities {
+    background:  no-repeat white url(images/runfly.jpg);
+    background-size: 100% 400px;
+}
+#contact {
+    background:  no-repeat white url(images/cliff_rock.jpg);
+    background-size: 100% 400px;
+}
+#cliffs {
+    background:  no-repeat white url(images/forest_cliff.jpg);
+    background-size: 100% 400px;
+}
 .main-header {
     background-color:rgba(38, 41, 61, 0.7) ;
     width: 700px;
@@ -151,7 +163,196 @@ footer #nondisclaimer .social .fa-instagram {
 
 /* Home */
 
+/* Activities */
+table {
+    width: 1000px;
+    margin: 4em auto 0 auto;
+}
+caption {
+    background: #852b1b;
+    height: 75px;
+    color: aliceblue;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 1em;
+    caption-side: top;
+}
+thead {
+    background: #bdE1FF;
+    text-align: center;
+}
+tbody {
+    background: #EEFFE6;
+    text-align: center;
+}
+th,td {
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+    border: solid 1px #852B1B;
+}
+th:first-child {
+    width: 145px;
+    height: 50px;
+    background: #4988D1;
+    color: #fff;
+}
+td:first-child {
+    font-weight:bold;
+    background: #BDE1FF;
+}
+#activities main #displaySelected {
+    visibility: hidden;
+    margin: 0 auto;
+    width: 600px;
+    border: 2px solid #9ed034;
+    padding: 0.75em;
+}
+#activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
+    display:inline-block;
+    margin:0;
+}
+#activities main #result {
+    min-height: 50px;
+    width: 300px;
+    padding: 0;
+}
+#activities main #result h4 {
+    margin-bottom: 1em;
+    font-size: 1.15em;
+}
+#activities main #displaySelected #sendinfo input[type="email"] {
+    width: 200px;
+}
+/* Contact */
+legend{
+    color:#4977D1;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+label {
+    display: block;
+    margin: 15px 0 0 0;
+}
+input[type="radio"] {
+    width: 25px;
+}
+textarea {
+    width: 300px;
+}
+span:first-child { 
+    font-weight: bold;
+}
+.phone,.email {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.radios {
+    display: inline-block;
+}
+fieldset {
+    border: 2px solid #9ed034;
+}
+li {
+    display:inline-block;
+}
+main #album #photo img {
+    width: 600px;
+    height: 400px;
+    border-top: #852b1b solid 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display:inline;
+}
+figcaption {
+    position:relative;
+    left:350px;
+    bottom:430px;
+    font-size: large;
+    color:#fff;
+    font-weight:bold;
+}
+#timeofday {
+    background-image:linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    color:#3a3a3a;
+    height:3em;
+    text-align:center;
+}
+span {
+    position:relative;
+    top:10px;
+}
+span:last-child {
+    color:#125688;
+}
+.randomcode {
+    margin:20px;
+    width:100px;
+    height:40px;
+    display:flex;
+}
+.randomcode p{
+    background-color: #3a3a3a50;
+    height:40px;
+    width:100px;
+    margin-left:10px;
+    position:relative;
+    bottom:28px;
+    padding-top:20px;
+    padding-right:20px;
+    padding-left: 20px;;
+    text-align:center;
+}
 
+.highlight { color:white; background: #57ca22;}
+
+
+
+.lightbox-toggle {
+    color: black;
+}
+  
+.backdrop {
+    z-index: 1;
+    opacity: .0;
+    filter: alpha(opacity=0);
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+.box {
+    z-index: 2;
+    position: fixed;
+    opacity: 1;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    width: 2000px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 0px 5px #444444;
+    -webkit-box-shadow: 0px 0px 5px #444444;
+    box-shadow: 0px 0px 5px #444444;
+    z-index: 3;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}
+
+.box img {
+    width:100%;
+}
 
 /* ACTIVATE BELOW WHEN TESTING NAVIGATION AND OTHERS FOR RWD */
 
